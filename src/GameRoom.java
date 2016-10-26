@@ -7,17 +7,17 @@ public class GameRoom
 	/** Add something to the room */
 	public void addThing(GameThing thing)
 	{
-		//Since ArrayList objects allow us to add null values,
-		//we have to make sure that we act only if we received
-		//a non-null reference
+		// Since ArrayList objects allow us to add null values,
+		// we have to make sure that we act only if we received
+		// a non-null reference
 		if (thing != null)
 		{
-			//Since ArrayList objects allow us to add the same value
-			//multiple times, we have to make sure that we act only
-			//if the thing is not already in the contents
+			// Since ArrayList objects allow us to add the same value
+			// multiple times, we have to make sure that we act only
+			// if the thing is not already in the contents
 			if (!roomContents.contains(thing))
 			{
-				//OK, let's add the thing then!
+				// OK, let's add the thing then!
 				roomContents.add(thing);					
 			}
 		}
@@ -26,10 +26,10 @@ public class GameRoom
 	/** Remove something from the room */
 	public void removeThing(GameThing thing)
 	{
-		//Fortunately, if we try to remove something from an
-		//ArrayList object that is not there, Java will not
-		//generate an error. Thus, we don't need to check
-		//to see if the thing is already in the contents
+		// Fortunately, if we try to remove something from an
+		// ArrayList object that is not there, Java will not
+		// generate an error. Thus, we don't need to check
+		// to see if the thing is already in the contents
 		roomContents.remove(thing);
 	}
 
